@@ -29,7 +29,7 @@ const handleClick = async () => {
     <button type="button" @click="handleClick">回答を生成する</button>
   </div>
   <div>
-    <h2>生成された回答</h2>
+    <h2>回答</h2>
     <div>{{ generateText }}</div>
   </div>
 </template>
