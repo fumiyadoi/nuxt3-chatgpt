@@ -21,15 +21,15 @@ const handleClick = async () => {
 </script>
 
 <template>
-  <h1>GPT-3 APP</h1>
+  <h1>ChatGPTアプリ</h1>
   <div>
     <input type="text" v-model="keyword" />
   </div>
   <div>
-    <button type="button" @click="handleClick">テキスト生成</button>
+    <button type="button" @click="handleClick">回答を生成する</button>
   </div>
   <div>
-    <h2>生成テキスト</h2>
+    <h2>回答</h2>
     <div>{{ generateText }}</div>
   </div>
 </template>
