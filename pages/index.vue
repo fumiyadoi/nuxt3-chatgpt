@@ -3,9 +3,8 @@ const keyword = ref("");
 const generateText = ref("");
 
 const prompt = computed(
-  () => `
-  日本語で回答して下さい。${keyword.value}について最大150文字で説明してください。
-`
+  () =>
+    `日本語で回答して下さい。${keyword.value}について最大150文字で説明してください。`
 );
 
 const handleClick = async () => {

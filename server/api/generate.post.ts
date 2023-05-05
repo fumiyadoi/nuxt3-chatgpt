@@ -1,9 +1,11 @@
 export default defineEventHandler(async (event) => {
   const { prompt } = await readBody(event);
 
+  const prompt_string = prompt.toString() as string;
+
   const payload = {
     model: "text-davinci-003",
-    prompt,
+    prompt_string,
     temperature: 0.7,
     top_p: 1,
     frequency_penalty: 0,
