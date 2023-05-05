@@ -7,15 +7,17 @@ const prompt = computed(
     `日本語で回答して下さい。${keyword.value}について最大150文字で説明してください。`
 );
 
+// const promptString = prompt.value;
+
 const handleClick = async () => {
-  const { data } = await useFetch("/api/generate", {
+  await useFetch("/api/generate", {
     method: "POST",
     body: {
       prompt,
     },
   });
 
-  generateText.value = data.value.choices[0].text;
+  // generateText.value = data.value.choices[0].text;
 };
 </script>
 
