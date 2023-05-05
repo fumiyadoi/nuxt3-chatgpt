@@ -3,6 +3,8 @@ import { defineNuxtConfig } from "nuxt/config";
 export default defineNuxtConfig({
   pages: true,
   routeRules: {
-    "/generate": { static: true },
+    "/**": { static: true },
+    "/posts/1": { static: true },
+    "/posts/**": { static: true },
   },
 });
